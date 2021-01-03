@@ -153,7 +153,7 @@ $(() => {
 
   // tags style
   $(() => {
-    $("#list-cloud a").wrap('<div class="ffolder small pink"></div>');
+    $("#list-cloud a").wrap('<div class="ffolder small green"></div>');
     $("#list-cloud a").width("50px");
     $("#list-cloud a").css({
       "font-size": "25px",

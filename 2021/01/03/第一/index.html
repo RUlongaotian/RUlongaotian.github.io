@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>汇编第一天 [ Soymilk ]</title>
+  
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+<link rel="stylesheet" href="/lib/highlight/monokai-sublime.css">
+
+<link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<link rel="stylesheet" href="/css/milk.css">
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+  <div class="milk-header">
+     
+
+  <nav class="header-nav">
+     
+    <ul class="nav-menu">
+      
+        <li id="Home">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <a href="/ ">Home</a>
+        </li>
+      
+        <li id="Archives">
+          <i class="fa fa-archive" aria-hidden="true"></i>
+          <a href="/archives ">Archives</a>
+        </li>
+      
+        <li id="About">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <a href="/about ">About</a>
+        </li>
+      
+    </ul>
+    
+    
+      <span class="nav-date">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <span id="date"></span>
+      </span>
+    
+    
+    
+      <span class="nav-system" id="nav-system"></span>
+    
+    
+    <span class="nav-access">
+      <i class="fa fa-universal-access" id="nav-access"></i>
+      <i class="fa fa-angle-down"></i>
+      <div class="dropdown-content" id="dropdown-content">
+        <ul class="social">
+          
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/MRsoymilk">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a href="mailto:codermrsoymilk@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        </ul>
+        <ul>
+          <li><span>Power by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span></li>
+        </ul>
+      </div>
+    </span>
+  </nav>
+ 
+  </div>
+  <div class="milk-body">
+    
+<div class="draggable-toc">
+  <div class="toc-title">汇编第一天</div>
+  <p>process: <span>0</span></p>
+  <div class="progress-container">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-text"> 第一章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-text"> 第二章</span></a></li></ol>
+</div>
+
+<div class="post-content" id="post-content">
+  <div id="top">汇编第一天</div>
+  <div class="post">
+    
+    <div class="content-categories">
+      
+      <i class="fa fa-location-arrow"></i>
+      <ul>
+        <li>categories</li>
+        
+          <li>&gt;</li>
+          <li>
+            <a href="/categories/王爽汇编/">
+          王爽汇编
+        </a>
+          </li>
+      
+      </ul>
+    
+    </div>
+    <hr>
+    
+    <p>简介</p>
+<a id="more"></a>
+<h1 id="第一章"><a class="markdownIt-Anchor" href="#第一章">#</a> 第一章</h1>
+<p><img src="https://img-blog.csdnimg.cn/20201208125827431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/20201208144258248.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>（1）汇编指令是机器指令的助记符，同机器指令一一对应。<br>
+（2）每一种 CPU 都有自己的汇编指令集。<br>
+（3）CPU 可以直接使用的信息在储存器中存放。<br>
+（4）在存储器中指令和数据没有任何区别，都是二进制信息。<br>
+（5）存储单元从零开始顺序编号。<br>
+（6）一个存储单元可以储存 8 个 bit，即 8 位二进制数。<br>
+（7）1Byte=8bit 1KB=1024B 1MB=1024K 1GB=1024MB。<br>
+（8）每一个 CPU 芯片都有许多管脚，这些管脚和总线相连。也可以说，这些管脚引出总线。一个 CPU 可以引出 3 种总线的宽度标志了这个 CPU 的不同方面的性能：<br>
+  地址总线的宽度决定了 CPU 的寻址能力；<br>
+  数据总线的宽度决定了 CPU 与其他器件进行数据传送时的一次数据传输量；<br>
+  控制总线的宽度决定了 CPU 对系统中其他器件的控制能力。<br>
+<img src="https://img-blog.csdnimg.cn/20201208144351673.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/20201208144402264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/20201208144434959.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201208142635697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+ 所有的物理存储器被看作一个由若干存储单位组成的逻辑存储器，每个物理存储器在这个逻辑存储器中占有一个地址段，即一段地址空间。CPU 在这段地址空间中读写数据，实际上就是在相对应的物理存储器中读写数据。<br>
+ </p>
+<h1 id="第二章"><a class="markdownIt-Anchor" href="#第二章">#</a> 第二章</h1>
+<p><img src="https://img-blog.csdnimg.cn/20201208144705413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/20201208144714927.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+ 1. 通用寄存器组<br>
+ 通用寄存器组包括 AX、BX、CX、DX4 个 16 位寄存器，用以存放 16 位数据或地址。也可用作 8 位寄存器。用作 8 位寄存器时分别记为 AH、AL、BH、BL、CH、CL、DH、DL。只能存放 8 位数据，不能存放地址。它们分别是 AX、BX、CX、DX 的高八位和低八位。若 AX=1234H，则 AH=12H，AL=34H。通用寄存器通用性强，对任何指令，它们具有相同的功能。为了缩短指令代码的长度，在 8086 中，某些通用寄存器用作专门用途。例如，串指令中必须用 CX 寄存器作为计数寄存器，存放串的长度，这样在串操作指令中不必给定 CX 的寄存器号，缩短了串操作指令代码的长度。下面一一介绍：<br>
+  AX (AH、AL)：累加器。有些指令约定以 AX (或 AL) 为源或目的寄存器。输入 / 输出指令必须通过 AX 或 AL 实现，例如：端口地址为 43H 的内容读入 CPU 的指令为 INAL，43H 或 INAX，43H。目的操作数只能是 AL/AX，而不能是其他的寄存器。<br>
+  BX (BH、BL)：基址寄存器。BX 可用作间接寻址的地址寄存器和基地址寄存器，BH、BL 可用作 8 位通用数据寄存器。<br>
+  CX (CH、CL)：计数寄存器。CX 在循环和串操作中充当计数器，指令执行后 CX 内容自动修改，因此称为计数寄存器。<br>
+  DX (DH、DL)：数据寄存器。除用作通用寄存器外，在 I/O 指令中可用作端口地址寄存器，乘除指令中用作辅助累加器。<br>
+2. 指针和变址寄存器<br>
+ BP (Base Pointer regilter)：基址指针寄存器。<br>
+ SP (Stack Pointer Register)：堆栈指针寄存器。<br>
+ SI (Source Index register)：源变址寄存器。<br>
+ DI (Destination Index Register)：目的变址寄存器。<br>
+ 这组寄存器存放的内容是某一段内地址偏移量，用来形成操作数地址，主要在堆栈操作和变址运算中使用。BP 和 SP 寄存器称为指针寄存器，与 SS 联用，为访问现行堆栈段提供方便。通常 BP 寄存器在间接寻址中使用，操作数在堆栈段中，由 SS 段寄存器与 BP 组合形成操作数地址即 BP 中存放现行堆栈段中一个数据区的 “基址” 的偏移量，所以称 BP 寄存器为基址指针。<br>
+SP 寄存器在堆栈操作中使用，PUSH 和 POP 指令是从 SP 寄存器得到现行堆栈段的段内地址偏移量，所以称 SP 寄存器为堆栈指针，SP 始终指向栈顶。<br>
+ 寄存器 SI 和 DI 称为变址寄存器，通常与 DS 一起使用，为访问现行数据段提供段内地址偏移量。在串指令中，其中源操作数的偏移量存放在 SⅠ 中，目的操作数的偏移量存放在 DI 中，SI 和 DI 的作用不能互换，否则传送地址相反。在串指令中，SI、DI 均为隐含寻址，此时，SI 和 DS 联用，Dl 和 ES 联用。<br>
+3. 段寄存器<br>
+ 8086/8088CPU 可直接寻址 1MB 的存储器空间，直接寻址需要 20 位地址码，而所有内部寄存器都是 16 位的，只能直接寻址 6KB，因此采用分段技术来解决。将 1MB 的存储空间分成若干逻辑段，每段最长 64KB，这些逻辑段在整个存储空间中可浮动。<br>
+ 8086/8088CPU 内部设置了 4 个 16 位段寄存器，它们分别是代码段寄存器 CS、数据段寄存器 DS、堆栈段寄存器 SS、附加段寄存器 ES、由它们给出相应逻辑段的首地址，称为 “段基址”。段基址与段内偏移地址组合形成 20 位物理地址，段内偏移地址可以存放在寄存器中，也可以存放在存储器中。<br>
+ 例如：代码段寄存器 CS 存放当前代码段基地址，IP 指令指针寄存器存放了下一条要执行指令的段内偏移地址，其中 CS=2000H，IP=001AH。通过组合，形成 20 位存储单元的寻址地址为 2001AH。<br>
+代码段内存放可执行的指令代码，数据段和附加段内存放操作的数据，通常操作数在现行数据段中，而在串指令中，目的操作数指明必须在现行附加段中。堆栈段开辟为程序执行中所要用的堆栈区，采用先进后出的方式访问它。各个段寄存器指明了一个规定的现行段，各段寄存器不可互换使用。程序较小时，代码段、数据段、堆栈段可放在一个段内，即包含在 64KB 之内，而当程序或数据量较大时，超过了 64KB，那么可以定义多个代码段或数据段、堆栈段、附加段。现行段由段寄存器指明段地址，使用中可以修改段寄存器内容，指向其他段。有时为了明确起见，可在指令前加上段超越的前缀，以指定操作数所在段。<br>
+4. 指令指针寄存器 IP<br>
+ 8086/8088CPU 中设置了一个 16 位指令指针寄存器 IP，用来存放将要执行的下一条指令在现行代码段中的偏移地址。程序运行中，它由 BIU 自动修改，使 IP 始终指向下一条将要执行的指令的地址，因此它是用来控制指令序列的执行流程的，是一个重要的寄存器。8086 程序不能直接访问 IP，但可以通过某些指令修改 IP 的内容。例如，当遇到中断指令或调用子程序指令时，8086 自动调整 IP 的内容，将 IP 中下一条将要执行的指令地址偏移量入栈保护，待中断程序执行完毕或子程序返回时，可将保护的内容从堆栈中弹出到 IP，使主程序继续运行。在跳转指令时，则将新的跳转目标地址送入 IP，改变它的内容，实现了程序的转移。<br>
+5. 标志寄存器 FR<br>
+ 标志寄存器 FR 也称程序状态字寄存器。（外语缩写：PSW、外语全称：Program Status Word 外文名：Flags Register 外语缩写：FR）<br>
+ FR 是 16 位寄存器，其中有 9 位有效位用来存放状态标志和控制标志。状态标志共 6 位，CF、PF、AF、ZF、SF 和 OF，用于寄存程序运行的状态信息，这些标志往往用作后续指令判断的依据。控制标志有 3 位，IF、DF 和 TF，用于控制 CPU 的操作，是人为设置的。<br>
+<img src="https://img-blog.csdnimg.cn/20201208161440407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
+ 8086CPU 的上一代 CPU 中的寄存器都是 8 位的，为了包保证兼容，使原来基于上一代 CPU 编写的程序稍加修改就可以运行在 8086 之上，8086CPU 的 AX、BX、CX、DX 这 4 个寄存区都可以分为两个可独立使用的 8 位寄存器来用：<br>
+ <strong>：</strong> <strong>AX 可分为 AH 和 AL；</strong><br>
+ <strong>：</strong> <strong>BX 可分为 BH 和 BL；</strong><br>
+ <strong>：</strong> <strong>CX 可分为 CH 和 CL；</strong><br>
+ <strong>：</strong> <strong>DX 可分为 DH 和 DL；</strong></p>
+
+    
+    <hr>
+    <div class="content-tags">
+      
+      <i class="fa fa-tags"></i>
+      <ul>
+        
+        <li><a href="/tags/汇编/">
+          汇编
+        </a></li>
+      
+      </ul>
+    
+    </div>
+    
+     
+<div class="comment-tabs" id="comment-tabs">
+  comment:
+  <ul>
+    
+      <li><a href="#Valine">Valine</a></li>
+    
+    
+      <li><a href="#LiveRe">LiveRe</a></li>
+    
+    
+      <li><a href="#ChangYan">ChangYan</a></li>
+    
+  </ul>
+  
+  
+    <div id="ChangYan">
+      <!--PC和WAP自适应版-->
+      <div id="SOHUCS" ></div> 
+      <script type="text/javascript"> 
+      (function(){ 
+      var appid = 'cyuGH4lBk'; 
+      var conf = 'ae32d85e4ca99348209aedfd3ae01478'; 
+      var width = window.innerWidth || document.documentElement.clientWidth; 
+      if (width < 960) {
+      var head = document.getElementsByTagName('head')[0]||document.head||document.documentElement;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.charset = 'utf-8';
+      script.id = 'changyan_mobile_js';
+      script.src = 'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf;
+      head.appendChild(script);
+      } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
+      </script>
+    </div>
+   
+  
+  
+    <div id="LiveRe">
+      
+        <!-- LiveRe City install code -->
+        <div id="lv-container" data-id="city" data-uid="MTAyMC80NjA4MS8yMjU5Mg==">
+          <script type="text/javascript">
+            (function(d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+              if (typeof LivereTower === 'function') { return; }
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+              e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+          </script>
+          <noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+          </div>
+          <!-- completed City install code -->
+        
+    </div>
+  
+  
+  
+    <div id="Valine">
+      <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+      <div id="vcomments"></div>
+      <script>
+        new Valine({
+          el: '#vcomments',
+          appId: '5bHFwYPW2iHWCiV7WmNRSenk-gzGzoHsz',
+          appKey: '2q4UgVDTmeJf9Phe8VbnNKyC',
+          avatar: 'monsterid',
+          enableQQ: true
+        })
+      </script>
+    </div>
+   
+</div>
+
+  </div>
+</div>
+ 
+<div>
+  <button id="scroll2top">back to top</button>
+</div>
+  </div>
+  
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/jquery/jquery-ui.min.js"></script>
+
+
+<script src="/lib/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script src="/js/milk.js"></script>
+
+</body>
+</html>

@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>shoka</title>
-        <link>http://example.com</link>
-        <description></description>
-        <language>en</language>
-        <pubDate>Sun, 03 Jan 2021 22:32:41 +0000</pubDate>
-        <lastBuildDate>Sun, 03 Jan 2021 22:32:41 +0000</lastBuildDate>
-        <category>汇编</category>
-        <item>
-            <guid isPermalink="true">http://example.com/2021/01/03/%E7%AC%AC%E4%B8%80/</guid>
-            <title>汇编第一天</title>
-            <link>http://example.com/2021/01/03/%E7%AC%AC%E4%B8%80/</link>
-            <category>汇编</category>
-            <pubDate>Sun, 03 Jan 2021 22:32:41 +0000</pubDate>
-            <description><![CDATA[ &lt;p&gt;简介&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>shoka • Posts by &#34;王爽汇编&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2021-01-03T22:32:41.000Z</updated>
+    <category term="汇编" />
+    <entry>
+        <id>http://example.com/2021/01/03/%E7%AC%AC%E4%B8%80/</id>
+        <title>汇编第一天</title>
+        <link rel="alternate" href="http://example.com/2021/01/03/%E7%AC%AC%E4%B8%80/"/>
+        <content type="html">&lt;p&gt;简介&lt;/p&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h1 id=&#34;第一章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第一章&#34;&gt;#&lt;/a&gt; 第一章&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/20201208125827431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQ3OTY2MQ==,size_16,color_FFFFFF,t_70&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
@@ -69,7 +64,8 @@ SP 寄存器在堆栈操作中使用，PUSH 和 POP 指令是从 SP 寄存器得
  &lt;strong&gt;：&lt;/strong&gt; &lt;strong&gt;BX 可分为 BH 和 BL；&lt;/strong&gt;&lt;br&gt;
  &lt;strong&gt;：&lt;/strong&gt; &lt;strong&gt;CX 可分为 CH 和 CL；&lt;/strong&gt;&lt;br&gt;
  &lt;strong&gt;：&lt;/strong&gt; &lt;strong&gt;DX 可分为 DH 和 DL；&lt;/strong&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="汇编" />
+        <updated>2021-01-03T22:32:41.000Z</updated>
+    </entry>
+</feed>
